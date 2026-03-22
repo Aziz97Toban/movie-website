@@ -1,0 +1,300 @@
+body{
+    background-color:#000000;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    background-size: cover;
+    background-position: center;
+}
+
+@font-face {
+    font-family: "akira_expanded";
+    src: url("fonts/Akira_Expanded.otf") format("opentype");
+}
+
+h1{
+    font-family: "akira_expanded";
+    font-size:6em;
+    color:#ffee32;
+    padding: 0px 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size:24px;
+    margin-bottom:20px;
+    font-family: oswald, sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+p{
+    font-size:15px;
+    line-height:1.5;
+    font-family: "roboto", sans-serif;
+    padding: 0;
+}
+
+h3{
+    font-family: "oswald", sans-serif;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+h4{
+    font-family: "oswald", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-bar{
+    font-family: "roboto", sans-serif;
+    list-style:none;
+    display:flex;
+    justify-content:flex-end;
+    gap:30px;
+    background-color: #001d3d;
+    padding:10px 20px;
+}
+
+.nav-bar a{
+    text-decoration:none;
+    color:white;
+}
+
+a:hover{
+    color:#ffee32;   
+}
+
+.hero{
+    height: 75vh;
+
+    background-image:
+    linear-gradient(
+    to right,
+    rgba(0,0,0,0.95) 0%,
+    rgba(0,0,0,0.9) 15%,
+    rgba(0,0,0,0.6) 25%,
+    rgba(0,0,0,0.3) 35%,
+    rgba(0,0,0,0) 45%
+    ),
+    url("images/fimposter.png");
+
+    background-size:65%;
+    background-repeat: no-repeat;
+    background-position:right top;
+
+    display:flex;
+    align-items:flex-start;
+
+    padding-left:40px;
+    /* padding-top: 20px; */
+}
+
+.hero p{
+    text-align:center;
+}
+
+.left-section{
+    max-width: 450px;
+    padding: 30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.btn-buy-tickets{
+    font-family: "roboto", sans-serif;
+    margin: 20px 0;
+    padding:12px 25px;
+    border-radius:10px;
+    font-size: 16px;
+    border:3px solid #ffee32;
+    color:white;
+    background-color: transparent;
+    cursor:pointer;
+}
+
+.btn-buy-tickets:hover{
+    background-color: #ffee32;
+    color:black;
+}
+
+.watch-trailer{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:"oswald", sans-serif;
+    font-size:20px;
+    color:white;
+    text-decoration:none;
+    margin-top:10px;
+}
+
+.watch-trailer:hover{
+color: #ffee32;
+}
+
+/* figure img{
+    width:100%;
+    max-width:700px;
+    border-radius: 10px;
+    margin: auto;
+}  */
+
+.movie-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 40px;
+    gap: 60px;
+
+}
+
+.film-details{
+  width: 180px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.film-details p{
+    line-height: 1.2;
+    margin: 6px 0;
+}
+
+.reviews-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.reviews{
+    display: flex;
+    gap: 90px;
+    align-items: flex-start;
+    margin-left: 250px;
+    margin-top: 10px;
+}
+
+.review{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 230px;
+}
+
+.score{
+    font-size:13px;
+    font-weight:bold;
+    border:2px solid white;
+    border-radius: 8px;
+    width:60px;
+    height:25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.review p{
+    padding:0;
+    margin-top:5px;
+}
+
+footer{
+    text-align:center;
+    margin-top:5px;
+    background-color: #001d3d;
+}
+
+footer p{
+    font-family: "roboto", sans-serif;
+    font-size:12px;
+    padding:10px;
+}
+
+/* Gallery -------------------------------------------------------*/
+
+.gallery-header{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gallery-header h1 {
+    font-size: 40px;
+    color: #ffee32;
+    margin-bottom: 0px;
+    font-family: "akira_expanded", sans-serif;
+}
+
+.gallery-header p {
+    font-size: 16px;
+    color: white;
+    margin-top: 0px;
+    font-family: "roboto", sans-serif;
+}
+
+.gallery-grid{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    transition: transform 0.6s ease;
+}
+
+.gallery-grid img:hover{
+transform: scale(1.05);
+}
+
+/* CAST PAGE -------------------------------------------------------*/
+
+.cast-title{
+    font-size: 60px;
+    margin-left:40px;
+    margin-top:40px;
+}
+
+.cast-container{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:60px;
+    flex-wrap:wrap;
+    margin-bottom: 40px;
+}
+
+.cast-card{
+    width: 220px;
+    text-align: center;
+}
+
+.cast-card h3{
+    font-size: 18px;
+    margin-top: 5px;
+}
+.cast-card p{
+    max-width:200px;
+    margin: auto;
+    font-size: 14px;
+    padding-top: 20px;
+    margin-top:0px;
+}
+
+.cast-card img{
+    width:180px;
+    height: 180px;
+    object-fit: cover;
+    border:1px solid #ffee32;
+    padding:10px;
+}
